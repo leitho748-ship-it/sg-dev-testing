@@ -1,0 +1,213 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLORES BASADOS EN TU LOGO */
+:root {
+    --azul-oscuro: #0a1f3c;
+    --azul-medio: #0f2f5f;
+    --azul-claro: #1e4fa3;
+    --gris: #1c1c1c;
+    --texto: #eaeaea;
+    --blanco: #ffffff;
+    --verde-acento: #22c55e;
+}
+
+/* BODY */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: 
+        linear-gradient(rgba(10, 31, 60, 0.9), rgba(10, 31, 60, 0.95)),
+        url("fondo2.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: contain;
+background-repeat: repeat;
+
+    color: var(--texto);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* LOGO TEXTO */
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--blanco);
+}
+
+.logo span {
+    color: var(--azul-claro);
+}
+
+/* LINKS */
+.nav-links a {
+    color: var(--texto);
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--azul-claro);
+}
+
+/* HERO */
+.hero h1 {
+    font-size: 1.8rem;   /* más chico */
+    margin-top: 5px;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-top: 5px;
+}.hero {
+    text-align: center;
+    padding: 40px 20px;   /* menos aire */
+}
+
+}
+
+.logo-hero:hover {
+    opacity: 1;
+}
+/* HERO AJUSTADO */
+.hero {
+    text-align: center;
+    padding: 50px 20px;  /* equilibrio perfecto */
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 0.95;
+        transform: translateY(0);
+    }
+}
+.logo-hero:hover {
+    transform: scale(1.05);
+}
+
+/* Asegurar centrado perfecto */
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--blanco);
+    letter-spacing: 1px;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #cbd5e1;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    border: 1px solid var(--azul-claro);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--azul-claro);
+    transform: translateY(-2px);
+}
+
+/* SERVICIOS */
+.services {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    color: var(--blanco);
+    font-weight: 500;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    transition: 0.3s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border: 1px solid var(--azul-claro);
+}
+
+.card h3 {
+    color: var(--blanco);
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #cbd5e1;
+}
+
+/* LISTAS */
+ul {
+    list-style: none;
+    padding: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
