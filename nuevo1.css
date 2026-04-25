@@ -211,3 +211,72 @@ footer {
     font-size: 0.9rem;
     color: #aaa;
 }
+/* 🔒 TODO encapsulado */
+.sg-trabajo {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+/* HEADER */
+.sg-trabajo header {
+    background: #0d1b2a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* CONTENIDO */
+.sg-trabajo .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/* TITULOS */
+.sg-trabajo h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sg-trabajo .descripcion {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* TARJETAS */
+.sg-trabajo .card-trabajo {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+/* IMAGEN */
+.sg-trabajo .card-trabajo img {
+    width: 100%;
+}
+
+/* TEXTO */
+.sg-trabajo .card-content {
+    padding: 20px;
+}
+
+.sg-trabajo .card-content h3 {
+    margin-top: 0;
+}
+
+.sg-trabajo .card-content p {
+    color: #555;
+}
+
+/* FOOTER */
+.sg-trabajo footer {
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
