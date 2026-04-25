@@ -334,3 +334,68 @@ h1 {
         padding: 40px;
     }
 }
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a2540;
+    color: white;
+    padding: 15px 20px;
+}
+
+/* LOGO */
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #0a2540;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    .nav a {
+        padding: 10px 0;
+        display: block;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+}
